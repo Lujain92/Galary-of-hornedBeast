@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HornedBeast from "./component/HornedBeast";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  render(){
+    return (
+      <div>
+        <header>
+          <h1>
+            My first react app
+          </h1>
+          <HornedBeast name='dog' des='bite'/>
+        <HornedBeast name='Cat'  des='cute'/>
+
+        </header>
+
+        <main>
+
+        </main>
+
+        <footer>
+          <p>
+            &copy; copy right for lujain aljarrah
+          </p>
+
+        </footer>
+        
+      </div>
+    )
+  }
+
 }
 
-export default App;
+export default App
