@@ -1,30 +1,16 @@
 import React from "react";
-import HornedBeast from "./component/HornedBeast";
 
+import Header from "./component/Header"
+import Footer from "./component/Footer"
+import Main from "./component/Main"
 class App extends React.Component{
   render(){
     return (
       <div>
-        <header>
-          <h1>
-            My first react app
-          </h1>
-          <HornedBeast name='dog' des='bite'/>
-        <HornedBeast name='Cat'  des='cute'/>
+        <Header/>
+        <Main/>
 
-        </header>
-
-        <main>
-
-        </main>
-
-        <footer>
-          <p>
-            &copy; copy right for lujain aljarrah
-          </p>
-
-        </footer>
-        
+        <Footer/>
       </div>
     )
   }
