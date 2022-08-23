@@ -85,8 +85,18 @@ Finish time: 4:50pm
 
 Actual time needed to complete: _____
 
+Number and name of feature:  two >Allow users to vote for their favorite beast
 
-Number and name of feature:  one>Display images
+Estimate of time needed to complete: 15min
+
+Start time:9:00am
+
+Finish time: 9:15am
+
+Actual time needed to complete: 15min
+
+
+Number and name of feature:  three>bootstrap
 
 Estimate of time needed to complete: 1h
 
