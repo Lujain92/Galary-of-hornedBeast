@@ -9,12 +9,13 @@ class Main extends React.Component{
     constructor(props){
     super(props)}
 
+
     render(){
         return(
             <div>
                 
               <Row xs={1} md={5} className="g-4">
-              {this.props.dataJson.map((animal, i) => <HornedBeast title={animal.title} image={animal.image_url} des={animal.description} /> )}
+              {this.props.dataJson.map((animal, i) => <HornedBeast title={animal.title} image={animal.image_url} des={animal.description} xx={this.props.modell} /> )}
               </Row>
 
               

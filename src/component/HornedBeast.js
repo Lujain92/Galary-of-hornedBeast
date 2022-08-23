@@ -28,7 +28,7 @@ class HornedBeast extends React.Component{
         {this.props.des} 
         favourite :{this.state.description} 
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary" onClick={this.props.xx}>Show a MODAL</Button>
       </Card.Body>
     </Card></Col>
     
