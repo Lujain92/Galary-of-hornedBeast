@@ -2,7 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-
+import Col from 'react-bootstrap/Col';
 
 class HornedBeast extends React.Component{
   constructor(props){
@@ -20,8 +20,7 @@ class HornedBeast extends React.Component{
         return(
             
 <div>
-
-    <Card style={{ width: '18rem' }}>
+<Col><Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={this.props.image} onClick={this.incrementfav} />
       <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
@@ -31,7 +30,8 @@ class HornedBeast extends React.Component{
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
-    </Card>
+    </Card></Col>
+    
 
 
 </div>
