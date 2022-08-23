@@ -41,7 +41,8 @@ Estimate of time needed to complete: 2h
 
 Start time:3:47pm
 
-Finish time: 4:57 -20
-9:50 pm start again 
+Finish time: 4:37 
+start again: 9:50 pm  
+finish 11:11 pm
 
-Actual time needed to complete: 1h
+Actual time needed to complete: 2:10h(but still I didn't include modal)
