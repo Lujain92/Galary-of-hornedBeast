@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-
+import './Style.css'
 class HornedBeast extends React.Component{
   constructor(props){
     super(props)
@@ -21,7 +21,7 @@ class HornedBeast extends React.Component{
             
 <div>
 <Col><Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={this.props.image} onClick={this.incrementfav} />
+      <Card.Img variant="top" src={this.props.image} onClick={this.incrementfav} className="image" />
       <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Text>
