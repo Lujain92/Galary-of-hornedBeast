@@ -6,6 +6,7 @@ import Footer from "./component/Footer"
 import Main from "./component/Main"
 import Data from"./component/Data.json"
 import SelectedBeast from "./component/SelectedBeast"
+import Myform from "./component/Myform";
 class App extends React.Component{
   constructor(props){
     super(props)
@@ -27,6 +28,7 @@ class App extends React.Component{
     return (
       <div>
         <Header/>
+        <Myform/>
         <Main dataJson={Data} modell={this.modal}/> 
         {/* 2)1)send function from parent to child trough main  */}
         <SelectedBeast modalview ={this.state.modall}/>
