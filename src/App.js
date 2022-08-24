@@ -15,10 +15,10 @@ class App extends React.Component{
     }
   }
 
-  modal=()=>{
+  modal=()=>{ //call  function 
 
     this.setState({
-      modall:this.state.modall +1
+      modall:this.state.modall+1
 
 
     })
@@ -27,8 +27,10 @@ class App extends React.Component{
     return (
       <div>
         <Header/>
-        <Main dataJson={Data} modell={this.modal}/>
+        <Main dataJson={Data} modell={this.modal}/> 
+        {/* 2)1)send function from parent to child trough main  */}
         <SelectedBeast modalview ={this.state.modall}/>
+        {/* 3)send from  */}
 
         <Footer/>
       </div>
