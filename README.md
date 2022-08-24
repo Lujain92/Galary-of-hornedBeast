@@ -46,3 +46,14 @@ start again: 9:50 pm
 finish 11:11 pm
 
 Actual time needed to complete: 2:10h(but still I didn't include modal)
+
+## 24/8/2022
+Number and name of feature:  one>Filter by Numbers of Horns
+
+Estimate of time needed to complete: 1h
+
+Start time:9:07pm
+
+Finish time: 
+
+Actual time needed to complete: 

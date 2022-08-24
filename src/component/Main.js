@@ -1,13 +1,11 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import Data from "./Data.json";
+
 
 
 import Row from 'react-bootstrap/Row';
 class Main extends React.Component{
-    // let x = {this.props.dataJson};
-    constructor(props){
-    super(props)}
+    
 
 
     render(){
