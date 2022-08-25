@@ -12,17 +12,20 @@ class App extends React.Component{
     super(props)
     this.state ={
       modall : false,
-      selbeast:{} 
-      // selbeast is the data that I want to send so I create selbeast state with empty data
+      selBeast:{} 
+
+      
 
     }
   }
 
-  modal=()=>{  
+  modal=(title)=>{  
+    const SelectedBe=Data.find(beast=>beast.title===title);
 
     this.setState({
       modall:true,
-      
+      selBeast:SelectedBe
+     
 
 
     })
@@ -38,13 +41,14 @@ class App extends React.Component{
   }
 
   render(){
+    
     return (
       <div>
         <Header/>
         <Myform/>
         <Main dataJson={Data} modell={this.modal}/> 
-        
-        <SelectedBeast modalview ={this.state.modall} handle={this.handleClose}/>
+        {console.log("aaa",this.state.selBeast)}
+        <SelectedBeast modalview ={this.state.modall} handle={this.handleClose} selBeast={this.state.selBeast}/>
        
 
         <Footer/>

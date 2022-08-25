@@ -4,18 +4,22 @@ import {Modal,Button} from 'react-bootstrap'; // put two import together instead
 
 
 class SelectedBeast extends React.Component{
-    
+
     render() {
         return( 
 
             <div>
                 
-                
-                <Modal show={this.props.modalview} onHide={this.props.handle}>
+           {/* {console.log(this.props.selBeast)}      */}
+        <Modal show={this.props.modalview} onHide={this.props.handle}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>{this.props.selBeast.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          <img src={this.props.selBeast.image_url} alt={this.props.selBeast.title}/> 
+
+         <p>{this.props.selBeast.description}</p> 
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.props.handle}>
             Close
@@ -34,10 +38,6 @@ class SelectedBeast extends React.Component{
 
 }
 export default SelectedBeast
- //  modal contain 
-// show value , it is truly falsy value, if this value become true the modal show and if false the modal dissaper 
-// handleClose function  to make the show value false
-// and contain modal header,body,footer
 
 
 
