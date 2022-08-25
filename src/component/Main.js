@@ -19,7 +19,6 @@ class Main extends React.Component{
               
               </Row>
 
-              {/* 2)1)send function from parent to child  */}
             </div>
         )
     }

@@ -11,28 +11,41 @@ class App extends React.Component{
   constructor(props){
     super(props)
     this.state ={
-      modall : 0
+      modall : false,
+      selbeast:{} 
+      // selbeast is the data that I want to send so I create selbeast state with empty data
 
     }
   }
 
-  modal=()=>{ //call  function 
+  modal=()=>{  
 
     this.setState({
-      modall:this.state.modall+1
+      modall:true,
+      
 
 
     })
   }
+
+  handleClose=()=>{  
+
+    this.setState({
+      modall:false
+
+
+    })
+  }
+
   render(){
     return (
       <div>
         <Header/>
         <Myform/>
         <Main dataJson={Data} modell={this.modal}/> 
-        {/* 2)1)send function from parent to child trough main  */}
-        <SelectedBeast modalview ={this.state.modall}/>
-        {/* 3)send from  */}
+        
+        <SelectedBeast modalview ={this.state.modall} handle={this.handleClose}/>
+       
 
         <Footer/>
       </div>
