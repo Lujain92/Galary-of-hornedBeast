@@ -1,30 +1,36 @@
 import React from "react";
 
-//import Modal from 'react-bootstrap/Modal';
+import {Modal,Button} from 'react-bootstrap'; // put two import together instead of two line 
 
 
 class SelectedBeast extends React.Component{
-    
+
     render() {
         return( 
 
             <div>
-                {this.props.modalview}
                 
-                {/* <Modal show={this.props.modalview} onHide={handleClose}>
+           {/* {console.log(this.props.selBeast)}      */}
+        <Modal show={this.props.modalview} onHide={this.props.handle}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>{this.props.selBeast.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          <img src={this.props.selBeast.image_url} alt={this.props.selBeast.title}/> 
+
+         <p>{this.props.selBeast.description}</p> 
+        </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={this.props.handle}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={this.props.handle}>
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal> */}
+      </Modal>
+
+     
    
             </div>
         )
@@ -34,5 +40,5 @@ class SelectedBeast extends React.Component{
 export default SelectedBeast
 
 
-// save changes,close, x bottom to close it (change from true fo false )
-//selsected beast to app to close it use function 
+
+

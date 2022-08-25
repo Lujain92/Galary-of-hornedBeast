@@ -5,9 +5,7 @@ import HornedBeast from "./HornedBeast";
 
 import Row from 'react-bootstrap/Row';
 class Main extends React.Component{
-    // let x = {this.props.dataJson};
-    // constructor(props){
-    // super(props)}
+    
 
 
     render(){
@@ -19,7 +17,6 @@ class Main extends React.Component{
               
               </Row>
 
-              {/* 2)1)send function from parent to child  */}
             </div>
         )
     }

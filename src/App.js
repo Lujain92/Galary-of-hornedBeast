@@ -11,28 +11,45 @@ class App extends React.Component{
   constructor(props){
     super(props)
     this.state ={
-      modall : 0
+      modall : false,
+      selBeast:{} 
+
+      
 
     }
   }
 
-  modal=()=>{ //call  function 
+  modal=(title)=>{  
+    const SelectedBe=Data.find(beast=>beast.title===title);
 
     this.setState({
-      modall:this.state.modall+1
+      modall:true,
+      selBeast:SelectedBe
+     
 
 
     })
   }
+
+  handleClose=()=>{  
+
+    this.setState({
+      modall:false
+
+
+    })
+  }
+
   render(){
+    
     return (
       <div>
         <Header/>
         <Myform/>
         <Main dataJson={Data} modell={this.modal}/> 
-        {/* 2)1)send function from parent to child trough main  */}
-        <SelectedBeast modalview ={this.state.modall}/>
-        {/* 3)send from  */}
+        {console.log("aaa",this.state.selBeast)}
+        <SelectedBeast modalview ={this.state.modall} handle={this.handleClose} selBeast={this.state.selBeast}/>
+       
 
         <Footer/>
       </div>
