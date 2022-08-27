@@ -24,7 +24,9 @@ class App extends React.Component{
 
     this.setState({
       modall:true,
-      selBeast:SelectedBe
+      selBeast:SelectedBe,
+      selected:{}
+
      
 
 
@@ -37,6 +39,12 @@ class App extends React.Component{
       modall:false
 
 
+    })
+  }
+
+  choose=()=>{
+    this.setState({
+      selected:ll
     })
   }
 

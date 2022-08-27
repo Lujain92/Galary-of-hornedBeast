@@ -46,3 +46,15 @@ start again: 9:50 pm
 finish 11:11 pm
 
 Actual time needed to complete: 2:10h(but still I didn't include modal)
+# 25/8/2022:
+I include it, it takes 3h
+# 27/8/2022:
+Number and name of feature:  one>Add form
+
+Estimate of time needed to complete: 1h
+
+Start time:9:00am
+
+Finish time: 4:50pm
+
+Actual time needed to complete: 2:10h

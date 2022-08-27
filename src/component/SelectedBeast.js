@@ -1,15 +1,13 @@
 import React from "react";
 
 import {Modal,Button} from 'react-bootstrap'; // put two import together instead of two line 
-
-
 class SelectedBeast extends React.Component{
 
     render() {
         return( 
 
-            <div>
-                
+            <div> 
+              
            {/* {console.log(this.props.selBeast)}      */}
         <Modal show={this.props.modalview} onHide={this.props.handle}>
         <Modal.Header closeButton>
@@ -18,7 +16,8 @@ class SelectedBeast extends React.Component{
         <Modal.Body>
           <img src={this.props.selBeast.image_url} alt={this.props.selBeast.title}/> 
 
-         <p>{this.props.selBeast.description}</p> 
+         <p>{this.props.selBeast.description}</p>
+         <p>{this.props.selBeast.horns}</p>. 
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.props.handle}>

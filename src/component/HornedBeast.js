@@ -26,6 +26,7 @@ class HornedBeast extends React.Component{
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Text>
         {this.props.des} 
+        <br></br>
         favourite :{this.state.description} 
         </Card.Text>
         <Button variant="primary" onClick={()=>this.props.xx(this.props.title)}>Show a MODAL</Button>
