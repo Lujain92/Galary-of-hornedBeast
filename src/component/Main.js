@@ -13,7 +13,7 @@ class Main extends React.Component{
             <div>
                 
               <Row xs={1} md={5} className="g-4">
-              {this.props.dataJson.map((animal, i) => <HornedBeast title={animal.title} image={animal.image_url} des={animal.description} xx={this.props.modell} /> )}
+              {this.props.selected.map((animal) => <HornedBeast title={animal.title} image={animal.image_url} des={animal.description} horns={animal.horns} xx={this.props.modell}  /> )}
               
               </Row>
 

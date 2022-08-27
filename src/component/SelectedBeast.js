@@ -17,7 +17,7 @@ class SelectedBeast extends React.Component{
           <img src={this.props.selBeast.image_url} alt={this.props.selBeast.title}/> 
 
          <p>{this.props.selBeast.description}</p>
-         <p>{this.props.selBeast.horns}</p>. 
+         <p>{this.props.selBeast.horns}</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.props.handle}>

@@ -10,7 +10,7 @@ class Myform extends React.Component{
             
       <Form.Group className="mb-3">
         <Form.Label>number of horns</Form.Label>
-        <Form.Select id="number">
+        <Form.Select id="numberOf" onChange={()=>{this.props.choose(this.props.e)}}>
           <option value= "1" >one</option>
           <option value="2" >two</option>
           <option value="3" >more</option>
