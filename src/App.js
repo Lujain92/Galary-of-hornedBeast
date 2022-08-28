@@ -12,7 +12,8 @@ class App extends React.Component{
     super(props)
     this.state ={
       modall : false,
-      selBeast:{} 
+      selBeast:{},
+      selected:Data
 
       
 
@@ -25,6 +26,8 @@ class App extends React.Component{
     this.setState({
       modall:true,
       selBeast:SelectedBe
+      
+
      
 
 
@@ -39,15 +42,30 @@ class App extends React.Component{
 
     })
   }
+//parseInt(e.target.numberOf.value ===x.horns)
+  choose=(e)=>{
+    const sel= Data.filter((x)=> 1
+    )
+
+      this.setState({
+      selected:sel
+    })
+    console.log("ddd",e.target.numberOf.value)
+
+  }
+   
 
   render(){
     
     return (
       <div>
         <Header/>
-        <Myform/>
-        <Main dataJson={Data} modell={this.modal}/> 
-        {console.log("aaa",this.state.selBeast)}
+        <Myform choose={()=>{this.choose(this.props.e)}}/>
+        {console.log("selected",this.state.selected)}
+
+    
+        <Main dataJson={Data} modell={this.modal} selected={this.state.selected} /> 
+        {/* {console.log("aaa",this.state.selBeast)} */}
         <SelectedBeast modalview ={this.state.modall} handle={this.handleClose} selBeast={this.state.selBeast}/>
        
 
