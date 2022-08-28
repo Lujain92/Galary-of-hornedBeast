@@ -42,9 +42,9 @@ class App extends React.Component{
 
     })
   }
-
+//parseInt(e.target.numberOf.value ===x.horns)
   choose=(e)=>{
-    const sel= Data.filter((x)=> parseInt(e.target.numberOf.value ===x.horns)
+    const sel= Data.filter((x)=> 1
     )
 
       this.setState({
